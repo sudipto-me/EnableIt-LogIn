@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.sudipto.logindemo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Log In Form"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/tv_login_form"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/tv_login_form"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        >
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:ems="10"
+            android:fontFamily="serif-monospace"
+            android:hint="Enter user name"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textColor="#8BC34A"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:background="@drawable/border"/>
+
+        <EditText
+            android:id="@+id/et_pass_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Enter pass word"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#00BCD4"
+            android:padding="8dp"
+            android:background="@drawable/border"
+            android:fontFamily="serif-monospace"/>
+
+
+    </LinearLayout>
+<!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="76dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/tv_show_view"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout" /> -->
+
+    <Button
+        android:id="@+id/btn_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:layout_gravity="end"
+        android:onClick="btnLogIn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"/>
+
+
+
+
+</RelativeLayout>
